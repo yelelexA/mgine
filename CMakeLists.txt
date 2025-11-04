@@ -23,6 +23,8 @@ add_subdirectory(modules)
 add_library(${PROJECT_NAME} STATIC
 	include/mgine/MgineWindow.h
 	src/mgine/MgineWindow.cpp
+	include/mgine/MginePipeline.h
+	src/mgine/MginePipeline.cpp
 )
 
 target_include_directories(${PROJECT_NAME}

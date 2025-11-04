@@ -1,5 +1,6 @@
 #pragma once
 
+#include "mgine/MginePipeline.h"
 #include "mgine/MgineWindow.h"
 
 namespace mgine
@@ -11,7 +12,10 @@ namespace mgine
 			static constexpr int HEIGHT = 600;
 
 			void run();
+
 		private:
 			MgineWindow mgineWindow{WIDTH, HEIGHT, "Vulkan window"};
+			// TODO: fixed absolute pathes
+			MginePipeline mginePipeline{"D:/Projects/mgine/src/shaders/simple_shader.vert.spv", "D:/Projects/mgine/src/shaders/simple_shader.frag.spv"};
 	};
 }
